@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>  
+.layout{
+    width: 500px;
+    height: 400px;
+    
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 2;
+border: 1px solid black;
+}
+
+.header{
+    grid-column: span 3;
+    height: 50px;
+    justify-self: center;
+    text-align: center;
+}
+.rectangle{
+    width: 100px;
+    height: 110px;
+    border: 10px;
+    border:2px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color:white;
+    text-align: center;
+}
+.form{
+    
+     grid-column: span 2;
+    justify-content:start;
+    
+}
+
+form{
+    justify-content: start;
+text-align: right;
+font: optional;
+padding: 10px;
+}
+.circle{
+    background: lightblue;
+    border-radius: 50%;
+    width: 100px;
+    height: 120px;
+
+    position: relative;
+    
+}
+.box{
+    text-align: center;
+    padding-top: 40px;
+}
+</style>
+<body>
+    
+    <div class="layout">
+
+    <div class="header"><b> Event 1</b> <br> number of available seat:23</div> 
+   <div class="rectangle"><div class="circle"> <div class="box"> IMAGE</div></div></div>
+    <div class="form"><form><label for="fname">NAME:</label> <input type="text" name="fname" id="name"><br><br>
+        <label for="email">Email:</label> <input type="email" name="email" id="email"><br><br>
+        <label for="phone no">PhoneNo:</label><input type="number" name="number" id="number"><br><br>
+        <label for="seat">number of seat:</label> <input type="number" name="seat" id="seat"><br><br>
+        <label for="attender">Name of attendee2:</label> <input type="text" name="attender" id="attender">
+        <br><br>
+        <input type="submit" name="submit" id="submit">   <button type="reset" value="Reset">cancel</button>
+        </form></div>
+
+    </div>
+</body>
+</html>
